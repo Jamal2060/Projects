@@ -16,15 +16,13 @@ def qrcode_generator():
             url = input("Enter the URL: ")
             qr = qrcode.make(url)
             qr.save("url.png")
-            print("Go to this location for the QR Code")
-            print(r"C:\Users\JAMES\PycharmProjects\Projects\QRCode Generator")
+            print("Go to the project directory for the QR Code")
             break
         elif qr_type == 2:
             text = input("Enter the Text: ")
             qr = qrcode.make(text)
             qr.save("text.png")
-            print("Go to this location for the QR Code")
-            print(r"C:\Users\JAMES\PycharmProjects\Projects\QRCode Generator")
+            print("Go to the project directory for the QR Code")
             break
         else:
             print("Invalid Input: Try Again: ")
